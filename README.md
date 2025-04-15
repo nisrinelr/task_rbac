@@ -64,3 +64,73 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+# 📝 Task App RBAC API (Laravel 10)
+
+This is a simple task management API built with Laravel 10. It supports **user registration**, **login**, **task creation**, and **task retrieval**, with **role-based access control (RBAC)** using Laravel Sanctum and API documentation via Swagger.
+
+---
+
+## 🚀 Features
+
+- ✅ Register and login with token-based auth (Laravel Sanctum)
+- 🧑‍💼 Roles: `admin`, `user`
+- ✍️ Admins can create tasks
+- 👥 Users can view their own tasks
+- 🛡️ Protected routes with middleware
+- 📚 API documentation using Swagger (OpenAPI)
+
+---
+
+## 📦 Requirements
+
+- PHP >= 8.1
+- Composer
+- Laravel 10
+- SQLite (or another DB of your choice)
+- Laravel Sanctum
+- L5-Swagger
+
+---
+
+## 🛠 Installation
+
+```bash
+git clone https://github.com/your-username/task_app_rbac.git
+cd task_app_rbac
+composer install
+cp .env.example .env
+php artisan key:generate
+touch database/database.sqlite
+php artisan migrate
+php artisan db:seed
+php artisan serve
+```
+## 🛠 TEST
+```bash
+php artisan test
+```
+# Authentication
+
+The app uses Laravel Sanctum for authentication. You can register users with the user or admin role, and login to retrieve a Bearer token.
+
+## Endpoints
+
+POST /api/register - Register a new user.
+
+POST /api/login - Login and retrieve an authentication token.
+
+GET /api/tasks - View tasks (for users only).
+
+POST /api/tasks - Create a task (admin only).
+
+PUT /api/tasks/{task} - Update a task (admin only).
+
+DELETE /api/tasks/{task} - Delete a task (admin only).
+
+## 🛠 API DOCUMENTATION
+http://localhost:8000/api/documentation
+
+
+
