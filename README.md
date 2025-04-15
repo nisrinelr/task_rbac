@@ -130,6 +130,12 @@ PUT /api/tasks/{task} - Update a task (admin only).
 DELETE /api/tasks/{task} - Delete a task (admin only).
 
 ## 🛠 API DOCUMENTATION
+After setting up the project locally, generate the Swagger docs:
+
+```bash
+php artisan l5-swagger:generate
+```
+Then visit :
 http://localhost:8000/api/documentation
 
 
