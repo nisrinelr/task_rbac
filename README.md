@@ -121,7 +121,11 @@ POST /api/register - Register a new user.
 
 POST /api/login - Login and retrieve an authentication token.
 
-GET /api/tasks - View tasks (for users only).
+GET /api/me - Get the authenticated user.
+
+GET /api/tasks - View tasks (Admins can see all tasks | Users can only see their tasks).
+
+GET /api/users - View tasks (for admins only).
 
 POST /api/tasks - Create a task (admin only).
 
