@@ -125,7 +125,7 @@ GET /api/me - Get the authenticated user.
 
 GET /api/tasks - View tasks (Admins can see all tasks | Users can only see their tasks).
 
-GET /api/users - View tasks (for admins only).
+GET /api/users - View all users (for admins only).
 
 POST /api/tasks - Create a task (admin only).
 
