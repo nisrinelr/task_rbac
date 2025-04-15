@@ -123,15 +123,17 @@ POST /api/login - Login and retrieve an authentication token.
 
 GET /api/me - Get the authenticated user.
 
-GET /api/tasks - View tasks (Admins can see all tasks | Users can only see their tasks).
+GET /api/users - View all users (for admins only).
 
-GET /api/users - View tasks (for admins only).
+GET /api/tasks - View tasks (Admins can see all tasks | Users can only see their tasks).
 
 POST /api/tasks - Create a task (admin only).
 
-PUT /api/tasks/{task} - Update a task (admin only).
+GET /api/tasks/{id} - Get task by ID.
 
-DELETE /api/tasks/{task} - Delete a task (admin only).
+PUT /api/tasks/{id} - Update a task (admin only).
+
+DELETE /api/tasks/{id} - Delete a task (admin only).
 
 ## 🛠 API DOCUMENTATION
 After setting up the project locally, generate the Swagger docs:
