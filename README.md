@@ -97,8 +97,8 @@ This is a simple task management API built with Laravel 10. It supports **user r
 ## 🛠 Installation
 
 ```bash
-git clone https://github.com/your-username/task_app_rbac.git
-cd task_app_rbac
+git clone https://github.com/nisrinelr/task_rbac.git
+cd task_rbac
 composer install
 cp .env.example .env
 php artisan key:generate
